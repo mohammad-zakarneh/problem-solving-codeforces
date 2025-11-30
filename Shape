@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int z; cin >> z;
+	for (int i = 1; i <= z; i++) {
+		int r = z - (i - 1);
+		int l = z + (i - 1);
+		for (int j = 1; j <= 2*z-1; j++) {
+			if (j >=r&&j<=l)cout << "*";
+			else if(j<l) cout << " ";
+		}
+		cout << endl;
+	}
+ 
+ 
+ 
+ 
+}
